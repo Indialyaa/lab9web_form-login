@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 1000px;
+  position: relative;
+  overflow-x: visible;
+  margin: 0 auto;
+  box-shadow: 0 0 20px hsl(190, 55%, 30%);
+}
+
+.header {
+  padding: 20px;
+  opacity: 0.5;
+  display: flex;
+  justify-content: space-between;
+  gap: 10;
+}
+
+.active {
+  background-color: #3384e0;
+}
+.navbar {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #3384e0;
+}
+
+.navbar a {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  background-color: #0f4077;
+}
+
+.hero {
+  width: 70%;
+  padding: 20px;
+  /* text-align: justidy; */
+}
+
+.hero h1,
+.hero p {
+  margin: 10px 0;
+}
+
+.hero button {
+  height: 40px;
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  background-color: #3684de;
+  padding: 10px 20px;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.hero button:hover {
+  background-color: #084d9c;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.wrapper .sidebar {
+  width: 30%;
+  margin: 10px;
+}
+
+.wrapper .sidebar .link {
+  width: 100%;
+  padding: 10px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper .sidebar .link a {
+  border: 1px solid rgba(100, 100, 100, 0.479);
+  padding: 8px;
+  color: black;
+}
+
+.wrapper .sidebar .link a:hover {
+  background-color: #cecece;
+}
+
+.wrapper .sidebar .link h3 {
+  padding: 10px;
+  color: white;
+  background-color: #3684de;
+}
+
+.wrapper .sidebar .text {
+  padding: 10px 20px 20px 20px;
+}
+
+.wrapper .sidebar .text .coba {
+  background-color: aliceblue;
+  border: 1px solid rgba(100, 100, 100, 0.479);
+}
+
+.wrapper .sidebar .text .coba h3 {
+  padding: 10px;
+  color: white;
+  background-color: #3684de;
+}
+
+.wrapper .sidebar .text .coba p {
+  color: black;
+  padding: 10px;
+}
+
+/* admin */
+
+.container .table {
+  display: relative;
+  border-collapse: collapse;
+  border-radius: 6px;
+  width: 80%;
+  margin: 20px auto;
+  overflow: hidden;
+  font-weight: 400;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.126);
+  background-color: rgba(42, 42, 42, 0.05);
+}
+
+.container .table thead {
+  background-color: #629ce7;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.container .table tbody {
+  font-size: 14px;
+  border: 1px solid rgba(209, 0, 0, 0.103);
+}
+
+.container .table tr th,
+td {
+  padding: 12px 14px;
+}
+
+.container .table tbody tr td:nth-child(1),
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5) {
+  text-align: center;
+}
+
+.container .table tbody tr td:nth-child(1) {
+  border-right: 1px solid rgba(0, 0, 0, 0.103);
+}
+
+.container .table tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.container .table tbody tr:nth-child(even):hover,
+.container .table tbody tr:nth-child(odd):hover {
+  background-color: #ddd;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.container .table tfoot {
+  background-color: #629ce7;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn {
+  padding: 10px;
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid transparent;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #3684de;
+}
+
+.btn-danger {
+  background-color: rgb(187, 26, 26);
+}
+
+.btn-danger:hover {
+  background-color: red;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 50px;
+}
+
+.form form {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: 10px;
+  /* width: 100%; */
+}
+
+.form form label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form form #judul,
+.form form textarea {
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid rgb(7, 7, 7);
+  border-radius: 8px;
+}
+
+/* login */
+.loginPage {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginPage #login-wrapper {
+  border: 1px solid green;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.loginPage #login-wrapper h1 {
+  text-align: center;
+}
+
+.loginPage #login-wrapper form {
+  padding: 10px;
+  width: 300px;
+}
+
+.loginPage #login-wrapper .p {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.loginPage #login-wrapper .form-label {
+  font-size: 16px;
+}
+
+.loginPage #login-wrapper .form-control {
+  border: 1px solid black;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.loginPage #login-wrapper button {
+  width: 100%;
+  margin: 10px 0;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  background-color: #827d82;
+
+  padding: 10px;
+  color: #eee;
+  border-radius: 2px;
+  font-family: "sans-serif";
+  margin-top: 2px;
+}
